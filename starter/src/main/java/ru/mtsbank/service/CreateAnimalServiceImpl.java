@@ -14,7 +14,7 @@ public class CreateAnimalServiceImpl implements CreateAnimalService {
         starterProperties = properties;
     }
 
-    AnimalFactory animalFactory = new AnimalFactory();
+    private AnimalFactory animalFactory = new AnimalFactory();
 
     public Animal create() {
         String[] names = null;
