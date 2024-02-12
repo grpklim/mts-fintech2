@@ -10,12 +10,9 @@ import ru.mtsbank.service.CreateAnimalServiceImpl;
 @Configuration
 @EnableConfigurationProperties(StarterProperties.class)
 public class StarterConfiguration {
-    @Autowired
-    StarterProperties properties;
-
     @Bean
     @Scope(value = "prototype")
-    public CreateAnimalServiceImpl serviceConfig() {
+    public CreateAnimalServiceImpl serviceConfig(StarterProperties properties) {
         return new CreateAnimalServiceImpl(properties);
     }
 }
