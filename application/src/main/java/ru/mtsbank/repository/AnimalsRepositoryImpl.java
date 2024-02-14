@@ -1,8 +1,9 @@
-package ru.mtsbank.service;
+package ru.mtsbank.repository;
 
 import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.stereotype.Repository;
 import ru.mtsbank.animals.Animal;
+import ru.mtsbank.service.CreateAnimalService;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDate;

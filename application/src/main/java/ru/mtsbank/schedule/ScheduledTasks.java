@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import ru.mtsbank.animals.Animal;
-import ru.mtsbank.service.AnimalsRepository;
+import ru.mtsbank.repository.AnimalsRepository;
 
 @Component
 public class ScheduledTasks {
